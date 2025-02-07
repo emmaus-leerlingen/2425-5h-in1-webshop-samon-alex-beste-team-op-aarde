@@ -1,11 +1,16 @@
 /* all pages */
 body {
-  background-color: rgb(49, 46, 46);
+  background-color: rgba(0, 0, 0, 0.473);
+
+  color: #ffffff;
+  }
 }
 footer {
   margin: 20px;
   font-size: 12px;
-} 
+  color: #ffffff; /*wit*/
+}
+
 
 .toast {
     /* dirty: below 'card' button  */
