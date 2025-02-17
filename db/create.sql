@@ -16,6 +16,18 @@ CREATE TABLE products (
   color_id INTEGER,
   price NUMERIC (10,2)
 );
+CREATE TABLE product_colors (
+  product_id INTEGER,
+  color_id INTEGER,
+  PRIMARY KEY (product_id, color_id),
+  FOREIGN KEY (product_id) REFERENCES products(id),
+  FOREIGN KEY (color_id) REFERENCES color(id)
+);
+
+INSERT INTO product_colors (product_id, color_id)
+VALUES (2, 3);  -- Koppel BMW XM aan de kleur rood
+INSERT INTO product_colors (product_id, color_id)
+VALUES (2, 4);  -- Koppel BMW XM aan de kleur zwart
 
 
 -- Voeg kleuren toe aan de color tabel
