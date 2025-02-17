@@ -66,8 +66,11 @@ INSERT INTO products (name, description, code, color_id, price)
 VALUES ('Porsche Panamera GTS', 'luxe sedan met een hele grote perfomance. Staat bekend om zijn snelheid', '48392523-7', 1, 245000);
 
 INSERT INTO products (name, description, code, color_id, price) 
-VALUES ('lamborghini revuelto', 'nieuwste lamborghini met enorm veel tech aan boord, voelt als een vliegtuig', '2013204283-7', 1, 1832943);
+VALUES ('lamborghini revuelto', 'nieuwste lamborghini met enorm veel tech aan boord, voelt als een vliegtuig', '2013204283-7', 1,640000);
 
 
 INSERT INTO products (name, description, code, color_id, price) 
-VALUES ('mercedes benz s class', 'de meest luxste auto onder de mercedes (sommige vinden zelfs onder de autos) meestal gebruikt door hoge politcus', '27398230-7', 1, 1832943);
+VALUES ('mercedes benz s class', 'de meest luxste auto onder de mercedes (sommige vinden zelfs onder de autos) meestal gebruikt door hoge politcus', '27398230-7', 1, 350000);
+
+INSERT INTO products (name, description, code, color_id, price) 
+VALUES ('BMW M5 CS', 'nieuwste M5 serie BMW snelste van de modellen gaat mega snel met super veel kracht en tech aan boord', '42347239-7', 1, 226720);
