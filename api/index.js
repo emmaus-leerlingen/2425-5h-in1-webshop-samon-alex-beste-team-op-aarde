@@ -69,7 +69,7 @@ function getProducts(request, response) {
   let data = []
   
   // Pas de ORDER BY aan om te sorteren op 'name' in plaats van 'id'
-  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, color.name AS color, products.code AS code, products.price AS price FROM products JOIN color ON products.color_id = color.id ORDER BY name ASC')
+  const sqlOpdracht = db.prepare('SELECT products.id AS id, products.name AS name, products.description AS description, color.name AS color, products.code AS code, products.price AS price FROM products JOIN color ON products.color_id = color.id JOIN merken ON merk_id = merken.id ORDER BY name ASC')
   // SELECT * FROM products JOIN color ON color.id = products.color_id
   data = sqlOpdracht.all()
   
